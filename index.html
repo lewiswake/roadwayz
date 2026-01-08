@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoadWayz Driving School - Kirkcaldy, Glenrothes, Leven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      /* Brand Colors */
+      .bg-brand-orange {
+        background-color: #d76832;
+      }
+      .text-brand-orange {
+        color: #d76832;
+      }
+      .border-brand-orange {
+        border-color: #d76832;
+      }
+
+      .bg-brand-dark {
+        background-color: #151c2f;
+      }
+      .text-brand-dark {
+        color: #151c2f;
+      }
+      .border-brand-dark {
+        border-color: #151c2f;
+      }
+
+      /* Button Utilities */
+      .btn-primary {
+        background-color: #151c2f;
+        color: white;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-primary:hover {
+        background-color: #252f46;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      .btn-primary:active {
+        transform: translateY(0) scale(0.98);
+      }
+
+      .btn-accent {
+        background-color: #d76832;
+        color: white;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-accent:hover {
+        background-color: #e87b45;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(215, 104, 50, 0.3);
+      }
+      .btn-accent:active {
+        transform: translateY(0) scale(0.98);
+      }
+
+      .btn-outline {
+        background-color: white;
+        color: #151c2f;
+        border: 2px solid #151c2f;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-outline:hover {
+        background-color: #f3f4f6;
+        border-color: #d76832;
+        color: #d76832;
+        transform: translateY(-2px);
+      }
+      .btn-outline:active {
+        transform: translateY(0) scale(0.98);
+      }
+
+      .hero-pattern {
+        background-color: #ffffff;
+        background-image: radial-gradient(#151c2f 0.75px, transparent 0.75px),
+          radial-gradient(#151c2f 0.75px, #ffffff 0.75px);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 15px;
+        opacity: 0.03;
+      }
+    </style>
+  </head>
+  <body class="text-[#151c2f] antialiased">
+    <nav
+      class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-24">
+          <div class="flex items-center">
+            <a href="#" class="flex flex-col justify-center group">
+              <span
+                class="text-3xl font-extrabold tracking-tight leading-none group-hover:opacity-90 transition"
+              >
+                <span class="text-brand-orange">R</span
+                ><span class="text-brand-dark">oad</span
+                ><span class="text-brand-orange">W</span
+                ><span class="text-brand-dark">ay</span
+                ><span class="text-brand-orange">z</span>
+              </span>
+              <span
+                class="text-xs font-bold tracking-[0.2em] text-brand-dark uppercase mt-1"
+                >Driving School</span
+              >
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-6">
+            <a
+              href="#about"
+              class="text-brand-dark hover:text-brand-orange font-medium transition hover:-translate-y-0.5 transform duration-200"
+              >About</a
+            >
+            <a
+              href="#reviews"
+              class="text-brand-dark hover:text-brand-orange font-medium transition hover:-translate-y-0.5 transform duration-200"
+              >Reviews</a
+            >
+            <a
+              href="#services"
+              class="text-brand-dark hover:text-brand-orange font-medium transition hover:-translate-y-0.5 transform duration-200"
+              >Services</a
+            >
+            <a
+              href="#rates"
+              class="text-brand-dark hover:text-brand-orange font-medium transition hover:-translate-y-0.5 transform duration-200"
+              >Rates</a
+            >
+
+            <a
+              href="https://www.facebook.com/profile.php?id=61581459571677&sk=photos"
+              target="_blank"
+              class="text-brand-dark hover:text-[#1877F2] text-2xl transition hover:-translate-y-0.5 transform duration-200 px-2"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="tel:07748128184"
+              class="btn-accent px-6 py-2 rounded-full font-bold flex items-center shadow-md"
+            >
+              <i class="fas fa-phone-alt mr-2"></i>07748 128 184
+            </a>
+          </div>
+          <div class="md:hidden flex items-center gap-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61581459571677&sk=photos"
+              target="_blank"
+              class="text-brand-dark hover:text-[#1877F2] text-2xl"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <button
+              onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+              class="text-brand-dark hover:text-brand-orange focus:outline-none p-2 rounded hover:bg-gray-100 transition"
+            >
+              <i class="fas fa-bars text-3xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg z-40"
+      >
+        <a
+          href="#about"
+          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 font-medium border-b border-gray-50"
+          >About</a
+        >
+        <a
+          href="#reviews"
+          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 font-medium border-b border-gray-50"
+          >Reviews</a
+        >
+        <a
+          href="#services"
+          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 font-medium border-b border-gray-50"
+          >Services</a
+        >
+        <a
+          href="#rates"
+          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 font-medium border-b border-gray-50"
+          >Rates</a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=61581459571677&sk=photos"
+          target="_blank"
+          class="block px-6 py-4 text-[#1877F2] font-medium border-b border-gray-50"
+        >
+          <i class="fab fa-facebook mr-2"></i> Follow on Facebook
+        </a>
+        <a
+          href="tel:07748128184"
+          class="block px-6 py-5 text-brand-orange font-bold bg-gray-50 hover:bg-gray-100"
+        >
+          <i class="fas fa-phone-alt mr-2"></i> Call 07748 128 184
+        </a>
+      </div>
+    </nav>
+
+    <section
+      class="relative bg-white pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden"
+    >
+      <div class="absolute inset-0 hero-pattern z-0"></div>
+      <div
+        class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-orange opacity-5 blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+          <div class="mb-12 lg:mb-0 text-center lg:text-left">
+            <div
+              class="inline-block px-4 py-1 mb-4 rounded-full bg-orange-100 text-brand-orange font-semibold text-sm"
+            >
+              <i class="fas fa-certificate mr-2"></i>Approved Driving Instructor
+            </div>
+            <h1
+              class="text-4xl lg:text-5xl font-extrabold text-brand-dark mb-6 leading-[1.1]"
+            >
+              Master the Road in<br />
+              <span class="text-brand-orange relative inline-block">
+                Kirkcaldy & Fife
+                <svg
+                  class="absolute w-full h-3 -bottom-1 left-0 text-brand-dark opacity-20"
+                  viewBox="0 0 100 10"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </h1>
+            <p
+              class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
+            >
+              Professional driving tuition covering
+              <strong>Kirkcaldy, Glenrothes, Leven & Methil</strong>. Learn in a
+              modern, easy-to-drive vehicle with structured lessons designed to
+              help you pass first time.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="tel:07748128184"
+                class="btn-primary px-8 py-4 rounded-lg font-bold border-b-4 border-brand-orange text-center"
+              >
+                Book Your First Lesson
+              </a>
+              <a
+                href="#rates"
+                class="btn-outline px-8 py-4 rounded-lg font-bold text-center"
+              >
+                View Prices
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-brand-orange rounded-2xl opacity-20 blur-lg transform rotate-2"
+            ></div>
+            <div
+              class="relative rounded-2xl shadow-2xl overflow-hidden aspect-[4/3] bg-white group border-4 border-white"
+            >
+              <img
+                src="roadwayz-car-clean.jpg"
+                alt="RoadWayz Toyota Corolla"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+              />
+
+              <div
+                class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg flex items-center"
+              >
+                <div
+                  class="w-3 h-3 bg-green-500 rounded-full animate-pulse mr-2"
+                ></div>
+                <span class="text-sm font-bold text-brand-dark"
+                  >Taking New Students</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-brand-orange"
+          >
+            <div
+              class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6 text-brand-orange"
+            >
+              <i class="fas fa-language text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">
+              Multilingual Tuition
+            </h3>
+            <p class="text-gray-600">
+              We speak your language. Lessons available in
+              <strong>English, Punjabi, Hindi & Urdu</strong> to help you learn
+              with total clarity.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-brand-dark"
+          >
+            <div
+              class="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mb-6 text-brand-dark"
+            >
+              <i class="fas fa-map-marked-alt text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">
+              Coverage Area
+            </h3>
+            <p class="text-gray-600">
+              We come to you. Covering
+              <strong>Kirkcaldy, Glenrothes, Leven & Methil</strong> test routes
+              to help you prepare effectively.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-brand-orange"
+          >
+            <div
+              class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6 text-brand-orange"
+            >
+              <i class="fas fa-clock text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-brand-dark mb-3">
+              Flexible Hours
+            </h3>
+            <p class="text-gray-600">
+              Driving lessons that fit your life. We operate from
+              <strong>7:30am to 9:00pm</strong> to suit your schedule.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-brand-dark">
+            What Our Learners Say
+          </h2>
+          <div class="w-20 h-1 bg-brand-orange mx-auto mt-4 rounded-full"></div>
+          <p class="text-gray-500 mt-4">
+            Real reviews from successful drivers in Fife
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 p-6 rounded-2xl relative shadow-sm hover:shadow-md transition"
+          >
+            <i
+              class="fas fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "Amazing driving instructor. I passed my driving test first time
+              with only 1 minor here in Kirkcaldy. I couldn’t be more happy...
+              very professional and patient."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 bg-brand-dark text-white rounded-full flex items-center justify-center font-bold mr-3"
+              >
+                P
+              </div>
+              <div class="font-bold text-brand-dark">Praise Ogbeide</div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 p-6 rounded-2xl relative shadow-sm hover:shadow-md transition"
+          >
+            <i
+              class="fas fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "Sandeep is a very good instructor... Goes over mistake and
+              explain it in details also multilingual in Urdu Punjabi and Hindi.
+              I enjoyed learning with her. Definitely recommend."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold mr-3"
+              >
+                S
+              </div>
+              <div class="font-bold text-brand-dark">Samina Bilal</div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 p-6 rounded-2xl relative shadow-sm hover:shadow-md transition"
+          >
+            <i
+              class="fas fa-quote-right absolute top-6 right-6 text-gray-200 text-4xl"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 italic mb-6">
+              "Amazing lessons. Instructor was calm and patient with me during
+              my lessons. She met my flexible schedule times.. I passed at first
+              attempt."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 bg-brand-dark text-white rounded-full flex items-center justify-center font-bold mr-3"
+              >
+                P
+              </div>
+              <div class="font-bold text-brand-dark">Peace Ogbeide</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rates" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div id="services">
+            <h2 class="text-3xl font-bold text-brand-dark mb-6">
+              Tailored Driving Lessons
+            </h2>
+            <p class="text-gray-600 mb-8">
+              We don't just teach you to pass the test; we teach you "Safe
+              Driving for Life".
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex group">
+                <div
+                  class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold transition group-hover:scale-110"
+                >
+                  L
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark">
+                    Learner Lessons
+                  </h4>
+                  <p class="text-gray-500 text-sm">
+                    From complete beginner to test-ready.
+                  </p>
+                </div>
+              </div>
+              <div class="flex group">
+                <div
+                  class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center font-bold transition group-hover:scale-110"
+                >
+                  <i class="fas fa-sync-alt text-sm"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark">
+                    Refresher Courses
+                  </h4>
+                  <p class="text-gray-500 text-sm">
+                    Regain your confidence behind the wheel.
+                  </p>
+                </div>
+              </div>
+              <div class="flex group">
+                <div
+                  class="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-brand-orange text-brand-orange flex items-center justify-center font-bold transition group-hover:scale-110"
+                >
+                  <i class="fas fa-road text-sm"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark">
+                    Motorway & Pass Plus
+                  </h4>
+                  <p class="text-gray-500 text-sm">
+                    Advanced skills for high-speed roads.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-brand-dark transform translate-x-2 translate-y-2 rounded-2xl"
+            ></div>
+            <div
+              class="relative bg-white p-8 rounded-2xl border border-gray-200 shadow-xl"
+            >
+              <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-brand-dark">Lesson Rates</h3>
+                <p class="text-gray-500 mt-2">
+                  Competitive pricing for quality tuition
+                </p>
+              </div>
+
+              <div class="space-y-4 mb-8">
+                <div
+                  class="flex justify-between items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                >
+                  <span class="font-semibold text-brand-dark"
+                    >1 Hour Lesson</span
+                  >
+                  <span class="font-bold text-xl text-brand-orange">£40</span>
+                </div>
+                <div
+                  class="flex justify-between items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                >
+                  <span class="font-semibold text-brand-dark"
+                    >1.5 Hour Lesson</span
+                  >
+                  <span class="font-bold text-xl text-brand-orange">£60</span>
+                </div>
+
+                <div
+                  class="relative bg-brand-orange/10 border border-brand-orange/20 rounded-lg overflow-hidden group"
+                >
+                  <div class="flex justify-end h-6">
+                    <div
+                      class="bg-brand-orange text-white text-[10px] px-3 py-1 font-bold uppercase tracking-wide rounded-bl-lg shadow-sm"
+                    >
+                      Best Value
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-end px-4 pb-4 pt-1">
+                    <div class="flex flex-col">
+                      <span class="font-bold text-brand-dark text-lg"
+                        >Block of 10 Hours</span
+                      >
+                      <span class="text-xs text-brand-orange font-semibold"
+                        >Save money on bulk booking</span
+                      >
+                    </div>
+                    <span
+                      class="font-bold text-2xl text-brand-orange leading-none"
+                      >£390</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="tel:07748128184"
+                class="btn-primary block w-full py-4 text-center rounded-lg shadow-lg"
+              >
+                Call to Book Now
+              </a>
+              <p class="text-xs text-center text-gray-400 mt-4">
+                Cancellations require 24 hours notice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-brand-dark text-white py-16 border-t-8 border-brand-orange"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-8">
+          <span class="text-4xl font-extrabold tracking-tight">
+            <span class="text-brand-orange">R</span
+            ><span class="text-white">oad</span
+            ><span class="text-brand-orange">W</span
+            ><span class="text-white">ay</span
+            ><span class="text-brand-orange">z</span>
+          </span>
+          <p
+            class="text-sm font-bold tracking-widest uppercase text-gray-400 mt-2"
+          >
+            Driving School
+          </p>
+        </div>
+
+        <div
+          class="inline-block p-1 rounded-2xl bg-gradient-to-r from-brand-orange to-red-500 mb-8 transform hover:scale-105 transition duration-300"
+        >
+          <div class="bg-brand-dark rounded-xl px-8 py-6">
+            <p class="text-gray-300 mb-2 uppercase text-xs tracking-wider">
+              Book your lesson
+            </p>
+            <a
+              href="tel:07748128184"
+              class="text-3xl md:text-5xl font-bold text-white hover:text-brand-orange transition"
+            >
+              07748 128 184
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto text-gray-300 text-sm mb-12"
+        >
+          <div
+            class="flex flex-col items-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition"
+          >
+            <i
+              class="fas fa-map-marker-alt text-2xl text-brand-orange mb-3"
+            ></i>
+            <span class="font-bold text-white mb-1">Coverage Area</span>
+            <span>Kirkcaldy, Glenrothes</span>
+            <span>Leven & Methil</span>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition"
+          >
+            <i class="fas fa-clock text-2xl text-brand-orange mb-3"></i>
+            <span class="font-bold text-white mb-1">Opening Hours</span>
+            <span>7:30am - 9:00pm</span>
+            <span>Flexible Schedule</span>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition"
+          >
+            <i class="fas fa-envelope text-2xl text-brand-orange mb-3"></i>
+            <span class="font-bold text-white mb-1">Get In Touch</span>
+            <a
+              href="mailto:bvpk29@hotmail.com"
+              class="hover:text-brand-orange transition"
+              >bvpk29@hotmail.com</a
+            >
+            <a
+              href="https://www.facebook.com/profile.php?id=61581459571677&sk=photos"
+              target="_blank"
+              class="mt-2 text-brand-orange hover:text-white transition"
+            >
+              <i class="fab fa-facebook mr-1"></i> Follow on Facebook
+            </a>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 flex flex-col items-center">
+          <p class="text-gray-500 text-sm">
+            © 2026 RoadWayz Driving School. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,160 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RoadWayz Driving School - Kirkcaldy, Glenrothes, Leven</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>RoadWayz Driving School | Kirkcaldy's Premier Tuition</title>
+    <meta
+      name="description"
+      content="Pass your driving test with RoadWayz. DVSA approved driving instructor in Kirkcaldy, Glenrothes, and Leven. Multilingual tuition (Urdu, Hindi, Punjabi) available."
+    />
+    <meta
+      name="keywords"
+      content="Driving lessons Kirkcaldy, Driving Instructor Glenrothes, RoadWayz, Learner Driver, DVSA Approved"
+    />
+    <meta name="author" content="RoadWayz Driving School" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lewiswake.github.io/roadwayz/" />
+    <meta property="og:title" content="RoadWayz Driving School | Kirkcaldy" />
+    <meta
+      property="og:description"
+      content="Pass your test fast with confident, patient tuition. Multilingual lessons available."
+    />
+    <meta
+      property="og:image"
+      content="https://lewiswake.github.io/roadwayz/logo.png"
+    />
+
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="script.js"></script>
+
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
-
-      body {
-        font-family: "Poppins", sans-serif;
-        scroll-behavior: smooth;
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "RoadWayz Driving School",
+        "image": "https://lewiswake.github.io/roadwayz/logo.png",
+        "telephone": "07748 128 184",
+        "email": "bvpk29@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kirkcaldy",
+          "addressRegion": "Fife",
+          "addressCountry": "UK"
+        },
+        "priceRange": "£40 - £390",
+        "url": "https://lewiswake.github.io/roadwayz/"
       }
-
-      /* BRAND COLORS UPDATED */
-      .bg-brand-orange {
-        background-color: #ff7300;
-      }
-      .text-brand-orange {
-        color: #ff7300;
-      }
-      .border-brand-orange {
-        border-color: #ff7300;
-      }
-
-      .bg-brand-dark {
-        background-color: #00223d;
-      }
-      .text-brand-dark {
-        color: #00223d;
-      }
-      .border-brand-dark {
-        border-color: #00223d;
-      }
-
-      .text-brand-red {
-        color: #ff2627;
-      }
-
-      /* Buttons */
-      .btn-primary {
-        background-color: #00223d;
-        color: #fdfdfb;
-        transition: all 0.2s;
-      }
-      .btn-primary:hover {
-        background-color: #003560;
-        transform: translateY(-2px);
-      }
-      .btn-accent {
-        background-color: #ff7300;
-        color: #fdfdfb;
-        transition: all 0.2s;
-      }
-      .btn-accent:hover {
-        background-color: #e66a00;
-        transform: translateY(-2px);
-      }
-
-      /* Form Styles */
-      .form-input {
-        width: 100%;
-        padding: 12px;
-        border: 2px solid #e5e7eb;
-        border-radius: 8px;
-        transition: border-color 0.2s;
-      }
-      .form-input:focus {
-        outline: none;
-        border-color: #ff7300;
-      }
-
-      /* Background Pattern */
-      .hero-pattern {
-        background-color: #fdfdfb;
-        background-image: radial-gradient(#00223d 0.75px, transparent 0.75px),
-          radial-gradient(#00223d 0.75px, #fdfdfb 0.75px);
-        background-size: 30px 30px;
-        opacity: 0.03;
-      }
-    </style>
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
+
   <body
-    class="text-[#00223d] bg-[#fdfdfb] antialiased"
-    x-data="{ showTerms: window.location.hash === '#terms' }"
+    class="text-slate-800 bg-brand-light antialiased selection:bg-brand-orange selection:text-white"
+    x-data="{ scrolled: false }"
+    @scroll.window="scrolled = (window.pageYOffset > 20)"
   >
     <nav
-      class="bg-[#fdfdfb] shadow-sm fixed w-full z-50 transition-all duration-300"
+      :class="{ 'glass shadow-md py-2': scrolled, 'bg-transparent py-6': !scrolled }"
+      class="fixed w-full z-50 transition-all duration-300 ease-in-out"
       x-data="{ mobileMenuOpen: false }"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-24">
-          <div class="flex items-center">
-            <a href="#" class="flex items-center">
-              <img
-                src="./logo.png"
-                alt="RoadWayz Driving School Logo"
-                class="h-16 w-auto"
-              />
-            </a>
-          </div>
-          <div class="hidden md:flex items-center space-x-6">
+        <div class="flex justify-between items-center h-16">
+          <div class="hidden md:flex items-center space-x-8">
             <a
               href="#about"
-              class="text-brand-dark hover:text-brand-orange font-medium transition"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
               >About</a
             >
             <a
-              href="#reviews"
-              class="text-brand-dark hover:text-brand-orange font-medium transition"
-              >Reviews</a
-            >
-            <a
               href="#rates"
-              class="text-brand-dark hover:text-brand-orange font-medium transition"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
               >Rates</a
             >
             <a
+              href="#reviews"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
+              >Reviews</a
+            >
+            <a
               href="#contact"
-              class="text-brand-dark hover:text-brand-orange font-medium transition"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
               >Contact</a
             >
+          </div>
 
+          <div class="hidden md:flex items-center space-x-8">
+            <div class="h-6 w-px bg-slate-300 mx-2"></div>
             <a
-              href="https://www.facebook.com/profile.php?id=61581459571677&sk=photos"
+              href="https://www.facebook.com/profile.php?id=61581459571677"
               target="_blank"
-              class="text-brand-dark hover:text-[#1877F2] text-2xl px-2"
+              rel="noopener noreferrer"
+              class="text-slate-400 hover:text-[#1877F2] transition-colors text-xl"
+              aria-label="Visit our Facebook page"
             >
               <i class="fab fa-facebook"></i>
             </a>
-
             <a
               href="tel:07748128184"
-              class="btn-accent px-6 py-2 rounded-full font-bold flex items-center shadow-md"
+              class="bg-brand-orange hover:bg-brand-accent text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-glow hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2"
             >
-              <i class="fas fa-phone-alt mr-2"></i>07748 128 184
+              <i class="fas fa-phone-alt text-xs"></i> 07748 128 184
             </a>
           </div>
 
-          <div class="md:hidden flex items-center gap-4">
-            <a href="tel:07748128184" class="text-brand-orange text-2xl"
-              ><i class="fas fa-phone"></i
-            ></a>
+          <div class="md:hidden flex items-center gap-4 ml-auto">
             <button
               @click="mobileMenuOpen = !mobileMenuOpen"
-              class="text-brand-dark text-3xl focus:outline-none"
+              class="text-brand-dark text-2xl focus:outline-none p-2"
+              aria-label="Toggle navigation menu"
             >
-              <i class="fas fa-bars"></i>
+              <i
+                class="fas"
+                :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"
+              ></i>
             </button>
           </div>
         </div>
@@ -163,493 +158,714 @@
       <div
         x-show="mobileMenuOpen"
         @click.outside="mobileMenuOpen = false"
-        x-transition:enter="transition ease-out duration-200"
-        x-transition:enter-start="opacity-0 -translate-y-2"
-        x-transition:enter-end="opacity-100 translate-y-0"
-        x-transition:leave="transition ease-in duration-150"
-        x-transition:leave-start="opacity-100 translate-y-0"
-        x-transition:leave-end="opacity-0 -translate-y-2"
-        class="md:hidden bg-[#fdfdfb] border-t border-gray-100 absolute w-full shadow-lg z-40"
+        x-transition.opacity.duration.300ms
+        class="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-xl z-40"
         style="display: none"
       >
-        <a
-          href="#about"
-          @click="mobileMenuOpen = false"
-          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 border-b border-gray-50"
-          >About</a
-        >
-        <a
-          href="#reviews"
-          @click="mobileMenuOpen = false"
-          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 border-b border-gray-50"
-          >Reviews</a
-        >
-        <a
-          href="#rates"
-          @click="mobileMenuOpen = false"
-          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 border-b border-gray-50"
-          >Rates</a
-        >
-        <a
-          href="#contact"
-          @click="mobileMenuOpen = false"
-          class="block px-6 py-4 text-brand-dark hover:bg-gray-50 border-b border-gray-50"
-          >Contact</a
-        >
+        <div class="flex flex-col p-4 space-y-4 text-center">
+          <a
+            href="#about"
+            @click="mobileMenuOpen = false"
+            class="text-brand-dark font-semibold py-2"
+            >About</a
+          >
+          <a
+            href="#rates"
+            @click="mobileMenuOpen = false"
+            class="text-brand-dark font-semibold py-2"
+            >Rates</a
+          >
+          <a
+            href="#reviews"
+            @click="mobileMenuOpen = false"
+            class="text-brand-dark font-semibold py-2"
+            >Reviews</a
+          >
+          <a
+            href="#contact"
+            @click="mobileMenuOpen = false"
+            class="text-brand-dark font-semibold py-2"
+            >Contact</a
+          >
+          <a
+            href="tel:07748128184"
+            class="bg-brand-orange text-white py-3 rounded-lg font-bold"
+            >Call Now</a
+          >
+        </div>
       </div>
     </nav>
 
-    <section
-      class="relative bg-[#fdfdfb] pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden"
-    >
-      <div class="absolute inset-0 hero-pattern z-0"></div>
-      <div
-        class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-orange opacity-5 blur-3xl"
-      ></div>
+    <main>
+      <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 overflow-hidden">
+        <div class="absolute inset-0 w-full h-full bg-[#fdfdfb] z-0">
+          <div
+            class="absolute top-0 -left-4 w-72 h-72 bg-brand-orange rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"
+          ></div>
+          <div
+            class="absolute top-0 -right-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+          ></div>
+          <div
+            class="absolute -bottom-32 left-20 w-72 h-72 bg-brand-orange rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"
+          ></div>
+          <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+          ></div>
+        </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-          <div class="mb-12 lg:mb-0 text-center lg:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div
-              class="inline-block px-4 py-1 mb-4 rounded-full bg-orange-100 text-brand-orange font-semibold text-sm"
+              class="mb-12 lg:mb-0 text-center lg:text-left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
-              <i class="fas fa-certificate mr-2"></i>Approved Driving Instructor
-            </div>
-            <h1
-              class="text-4xl lg:text-5xl font-extrabold text-brand-dark mb-6 leading-[1.1]"
-            >
-              Master the Road in<br />
-              <span class="text-brand-orange relative inline-block">
-                Kirkcaldy & Fife
-                <svg
-                  class="absolute w-full h-3 -bottom-1 left-0 text-brand-dark opacity-20"
-                  viewBox="0 0 100 10"
-                  preserveAspectRatio="none"
+              <h1 data-aos="fade-down" data-aos-delay="200">
+                <img
+                  src="logo.png"
+                  alt="RoadWayz Driving School - Premier Driving Lessons in Kirkcaldy"
+                  title="RoadWayz Driving School Kirkcaldy"
+                  width="320"
+                  height="120"
+                  fetchpriority="high"
+                  class="w-64 md:w-80 mx-auto lg:mx-0 mb-8 object-contain"
+                />
+              </h1>
+
+              <div
+                class="inline-flex items-center px-4 py-1.5 mb-6 rounded-full bg-orange-50 border border-orange-100 text-brand-orange font-semibold text-xs uppercase tracking-wider shadow-sm"
+              >
+                <i class="fas fa-certificate mr-2"></i> DVSA Approved Instructor
+              </div>
+
+              <p
+                class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
+              >
+                Pass your test with Kirkcaldy's most learner-focused driving
+                school. Serving
+                <span class="font-bold text-brand-dark"
+                  >Kirkcaldy, Glenrothes, Leven & Methil</span
+                >.
+              </p>
+
+              <div
+                class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="#contact"
+                  class="group bg-brand-dark text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-brand-dark/20 hover:bg-slate-800 transition-all transform hover:-translate-y-1 flex justify-center items-center"
                 >
-                  <path
-                    d="M0 5 Q 50 10 100 5"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    fill="none"
-                  />
-                </svg>
-              </span>
-            </h1>
-            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-              Professional driving tuition covering
-              <strong>Kirkcaldy, Glenrothes, Leven & Methil</strong>. We
-              prioritize practical driving time over parked theory lessons.
-            </p>
-            <div
-              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <a
-                href="#contact"
-                class="btn-primary px-8 py-4 rounded-lg font-bold border-b-4 border-brand-orange text-center"
+                  Book First Lesson
+                  <i
+                    class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                </a>
+                <a
+                  href="#rates"
+                  class="px-8 py-4 bg-white text-brand-dark border border-slate-200 font-bold rounded-xl hover:bg-slate-50 hover:border-brand-dark transition-all flex justify-center items-center"
+                >
+                  View Prices
+                </a>
+              </div>
+
+              <div
+                class="mt-10 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500 font-medium"
               >
-                Book Your First Lesson
-              </a>
-              <a
-                href="#rates"
-                class="px-8 py-4 bg-[#fdfdfb] text-brand-dark border-2 border-brand-dark font-bold rounded-lg hover:bg-gray-50 transition text-center"
+                <div class="flex -space-x-2">
+                  <div
+                    class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-xs"
+                  >
+                    🎓
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-xs"
+                  >
+                    🚗
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-brand-orange border-2 border-white flex items-center justify-center text-[8px] text-white"
+                  >
+                    40+
+                  </div>
+                </div>
+                <p>Happy students passed this year</p>
+              </div>
+            </div>
+
+            <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+              <div
+                class="absolute top-10 right-10 w-full h-full bg-brand-dark rounded-[2rem] opacity-5 transform translate-x-4 translate-y-4"
+              ></div>
+              <div
+                class="absolute -inset-1 bg-gradient-to-tr from-brand-orange to-brand-dark rounded-[2rem] opacity-20 blur-lg"
+              ></div>
+
+              <div
+                class="relative rounded-[2rem] shadow-2xl overflow-hidden aspect-[4/3] bg-white group border-4 border-white"
               >
-                View Prices
-              </a>
-            </div>
-          </div>
-          <div class="relative">
-            <div
-              class="absolute -inset-4 bg-brand-orange rounded-2xl opacity-20 blur-lg transform rotate-2"
-            ></div>
-            <div
-              class="relative rounded-2xl shadow-2xl overflow-hidden aspect-[4/3] bg-[#fdfdfb] group border-4 border-[#fdfdfb]"
-            >
-              <img
-                src="roadwayz-car-clean.jpg"
-                alt="RoadWayz Toyota Corolla"
-                class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="about"
-      class="py-20 bg-brand-dark text-[#fdfdfb] relative overflow-hidden scroll-mt-32"
-    >
-      <div
-        class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
-      ></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-bold mb-6 text-[#fdfdfb]">
-              Less Talk, <span class="text-brand-orange">More Driving</span>
-            </h2>
-            <p class="text-gray-300 mb-6 text-lg leading-relaxed">
-              We believe you learn to drive by doing, not just by talking about
-              it.
-            </p>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              At RoadWayz, we work hard to ensure you spend the maximum amount
-              of your lesson time with the wheels turning. While theory is
-              essential, we don't believe in sitting parked at the roadside
-              reading textbooks when you could be gaining valuable practical
-              experience.
-            </p>
-            <ul class="space-y-4 mt-8">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-brand-orange mr-3"></i>
-                Maximised wheel time
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-brand-orange mr-3"></i>
-                Practical, hands-on learning
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-brand-orange mr-3"></i>
-                Modern coaching techniques
-              </li>
-            </ul>
-          </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div
-              class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10 text-center"
-            >
-              <i
-                class="fas fa-tachometer-alt text-4xl text-brand-orange mb-4"
-              ></i>
-              <h4 class="font-bold">Active Learning</h4>
-              <p class="text-xs text-gray-400 mt-2">Learn by doing</p>
-            </div>
-            <div
-              class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10 text-center"
-            >
-              <i class="fas fa-language text-4xl text-brand-orange mb-4"></i>
-              <h4 class="font-bold">Multilingual</h4>
-              <p class="text-xs text-gray-400 mt-2">Punjabi, Hindi & Urdu</p>
-            </div>
-            <div
-              class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10 text-center"
-            >
-              <i
-                class="fas fa-map-marked-alt text-4xl text-brand-orange mb-4"
-              ></i>
-              <h4 class="font-bold">Local Expert</h4>
-              <p class="text-xs text-gray-400 mt-2">Kirkcaldy Routes</p>
-            </div>
-            <div
-              class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10 text-center"
-            >
-              <i class="fas fa-car text-4xl text-brand-orange mb-4"></i>
-              <h4 class="font-bold">Modern Car</h4>
-              <p class="text-xs text-gray-400 mt-2">Toyota Corolla</p>
+                <img
+                  src="roadwayz-car-clean.jpg"
+                  onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'"
+                  alt="RoadWayz Toyota Corolla Tuition Car"
+                  fetchpriority="high"
+                  width="800"
+                  height="600"
+                  class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out"
+                />
+                <div
+                  class="absolute bottom-6 left-6 glass-card px-4 py-3 rounded-xl flex items-center gap-3 shadow-lg"
+                >
+                  <div class="bg-green-100 p-2 rounded-full text-green-600">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-500 font-semibold uppercase">
+                      Pass Rate
+                    </p>
+                    <p class="font-bold text-brand-dark">Excellent</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="rates" class="py-20 bg-gray-50 scroll-mt-32">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-brand-dark">
-            Simple, Transparent Pricing
-          </h2>
-          <div class="w-20 h-1 bg-brand-orange mx-auto mt-4 rounded-full"></div>
-        </div>
-
+      <section
+        id="about"
+        class="py-24 bg-brand-dark text-white relative overflow-hidden"
+      >
         <div
-          class="max-w-3xl mx-auto bg-[#fdfdfb] rounded-2xl shadow-xl overflow-hidden border border-gray-100"
-        >
-          <div class="p-8 md:p-12">
-            <div class="space-y-6">
-              <div
-                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+          class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+        ></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-up">
+              <h2
+                class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2"
               >
-                <span class="font-semibold text-brand-dark">1 Hour Lesson</span>
-                <span class="font-bold text-xl text-brand-orange">£40</span>
+                Our Philosophy
+              </h2>
+              <h3
+                class="text-4xl lg:text-5xl font-bold mb-6 text-white leading-tight"
+              >
+                Less Talk. <br /><span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-yellow-500"
+                  >More Driving.</span
+                >
+              </h3>
+              <p class="text-slate-300 mb-6 text-lg leading-relaxed font-light">
+                We don't believe in sitting parked at the roadside reading
+                textbooks when you could be gaining valuable practical
+                experience.
+              </p>
+
+              <div class="space-y-4 mt-8">
+                <div class="flex items-start">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-orange"
+                  >
+                    <i class="fas fa-tachometer-alt"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-bold">Maximised Wheel Time</h4>
+                    <p class="text-sm text-slate-400">
+                      Every minute counts. We get you driving from day one.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-orange"
+                  >
+                    <i class="fas fa-route"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-bold">Local Route Experts</h4>
+                    <p class="text-sm text-slate-400">
+                      Master the tricky spots in Kirkcaldy before your test.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+              <div
+                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20"
+              >
+                <i class="fas fa-language text-3xl text-brand-orange mb-4"></i>
+                <h4 class="font-bold text-lg">Multilingual</h4>
+                <p class="text-sm text-slate-400 mt-2 leading-snug">
+                  Fluent tuition available in Punjabi, Hindi & Urdu.
+                </p>
               </div>
               <div
-                class="flex justify-between items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20 translate-y-8"
               >
-                <span class="font-semibold text-brand-dark"
-                  >1.5 Hour Lesson</span
-                >
-                <span class="font-bold text-xl text-brand-orange">£60</span>
+                <i class="fas fa-car-side text-3xl text-brand-orange mb-4"></i>
+                <h4 class="font-bold text-lg">Modern Fleet</h4>
+                <p class="text-sm text-slate-400 mt-2 leading-snug">
+                  Learn in a dual-controlled, modern Toyota Corolla.
+                </p>
+              </div>
+              <div
+                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20"
+              >
+                <i class="fas fa-brain text-3xl text-brand-orange mb-4"></i>
+                <h4 class="font-bold text-lg">Calm Coaching</h4>
+                <p class="text-sm text-slate-400 mt-2 leading-snug">
+                  Patient instruction for nervous learners.
+                </p>
+              </div>
+              <div
+                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20 translate-y-8"
+              >
+                <i
+                  class="fas fa-calendar-check text-3xl text-brand-orange mb-4"
+                ></i>
+                <h4 class="font-bold text-lg">Flexible</h4>
+                <p class="text-sm text-slate-400 mt-2 leading-snug">
+                  Weekend and evening slots available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rates" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-bold text-brand-dark mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">
+              No hidden fees. Just high-quality tuition at competitive rates.
+            </p>
+          </div>
+
+          <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6" data-aos="fade-right">
+              <div
+                class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition flex justify-between items-center group"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-50 text-brand-dark flex items-center justify-center font-bold text-lg group-hover:bg-brand-dark group-hover:text-white transition"
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-brand-dark">Standard Lesson</h4>
+                    <p class="text-xs text-slate-400">1 Hour Duration</p>
+                  </div>
+                </div>
+                <span class="text-2xl font-bold text-brand-dark">£40</span>
               </div>
 
               <div
-                class="relative bg-brand-orange/10 border border-brand-orange/20 rounded-lg overflow-hidden"
+                class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition flex justify-between items-center group"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-50 text-brand-dark flex items-center justify-center font-bold text-lg group-hover:bg-brand-dark group-hover:text-white transition"
+                  >
+                    1.5
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-brand-dark">Extended Lesson</h4>
+                    <p class="text-xs text-slate-400">1.5 Hours Duration</p>
+                  </div>
+                </div>
+                <span class="text-2xl font-bold text-brand-dark">£60</span>
+              </div>
+
+              <div class="p-6 bg-slate-100 rounded-xl text-center">
+                <p class="text-sm text-slate-500 font-medium">
+                  <i class="fas fa-info-circle mr-2"></i>We also offer Motorway
+                  Lessons, Pass Plus & Refresher Courses.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative transform md:scale-105" data-aos="fade-left">
+              <div
+                class="absolute -top-4 left-0 right-0 flex justify-center z-10"
+              >
+                <span
+                  class="bg-brand-orange text-white text-xs font-bold uppercase tracking-wider py-1 px-4 rounded-full shadow-lg"
+                  >Most Popular</span
+                >
+              </div>
+              <div
+                class="bg-white rounded-2xl shadow-xl border-2 border-brand-orange overflow-hidden"
               >
                 <div
-                  class="bg-brand-orange text-[#fdfdfb] text-[10px] px-3 py-1 font-bold uppercase tracking-wide inline-block absolute top-0 right-0 rounded-bl-lg"
+                  class="bg-brand-orange/10 p-8 text-center border-b border-brand-orange/10"
                 >
-                  Best Value
-                </div>
-                <div class="flex justify-between items-center p-4 pt-6">
-                  <div class="flex flex-col">
-                    <span class="font-bold text-brand-dark text-lg"
-                      >Block of 10 Hours</span
+                  <h3 class="text-2xl font-bold text-brand-dark mb-2">
+                    Block of 10 Hours
+                  </h3>
+                  <div class="flex justify-center items-baseline gap-1">
+                    <span class="text-lg text-slate-400 line-through"
+                      >£400</span
                     >
-                    <span class="text-xs text-brand-orange font-semibold"
-                      >Save money on bulk booking</span
+                    <span class="text-5xl font-extrabold text-brand-orange"
+                      >£390</span
                     >
                   </div>
-                  <span class="font-bold text-2xl text-brand-orange">£390</span>
+                  <p class="text-sm text-green-600 font-bold mt-2">
+                    Save £10 instantly
+                  </p>
+                </div>
+                <div class="p-8">
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-center text-slate-600 text-sm">
+                      <i class="fas fa-check text-green-500 mr-3"></i> Secure
+                      your preferred slot
+                    </li>
+                    <li class="flex items-center text-slate-600 text-sm">
+                      <i class="fas fa-check text-green-500 mr-3"></i>
+                      Structured learning plan
+                    </li>
+                    <li class="flex items-center text-slate-600 text-sm">
+                      <i class="fas fa-check text-green-500 mr-3"></i> Track
+                      your progress faster
+                    </li>
+                    <li class="flex items-center text-slate-600 text-sm">
+                      <i class="fas fa-check text-green-500 mr-3"></i> Priority
+                      test booking help
+                    </li>
+                  </ul>
+                  <a
+                    href="#contact"
+                    class="block w-full py-4 rounded-xl bg-brand-dark text-white font-bold text-center shadow-lg hover:bg-slate-800 transition transform hover:-translate-y-1"
+                    >Book Package</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="mt-8 text-center">
-              <p class="text-gray-500 text-sm mb-4">
-                Also covering Refresher Courses, Motorway Lessons & Pass Plus
-              </p>
-              <a
-                href="#contact"
-                class="btn-primary inline-block px-12 py-3 rounded-lg font-bold shadow-lg"
-                >Check Availability</a
-              >
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="reviews" class="py-20 bg-[#fdfdfb] scroll-mt-32">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-brand-dark mb-12">
-          What Our Learners Say
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
-            <div class="flex text-yellow-400 mb-4">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </div>
-            <p class="text-gray-600 italic mb-4">
-              "Amazing driving instructor. I passed my driving test first time
-              with only 1 minor here in Kirkcaldy. Very professional and
-              patient."
-            </p>
-            <p class="font-bold text-brand-dark">- Praise Ogbeide</p>
+      <section id="reviews" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-brand-dark">
+              Learner Success Stories
+            </h2>
+            <div
+              class="w-24 h-1 bg-brand-orange mx-auto mt-4 rounded-full"
+            ></div>
           </div>
-          <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
-            <div class="flex text-yellow-400 mb-4">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </div>
-            <p class="text-gray-600 italic mb-4">
-              "Sandeep is a very good instructor... Goes over mistake and
-              explain it in details. Also multilingual in Urdu Punjabi and
-              Hindi."
-            </p>
-            <p class="font-bold text-brand-dark">- Samina Bilal</p>
-          </div>
-          <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
-            <div class="flex text-yellow-400 mb-4">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i><i class="fas fa-star"></i
-              ><i class="fas fa-star"></i>
-            </div>
-            <p class="text-gray-600 italic mb-4">
-              "Great instructor... makes learning to drive feel easy and stays
-              patient when mistakes are made."
-            </p>
-            <p class="font-bold text-brand-dark">- IbbyX</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="contact" class="py-20 bg-gray-50 scroll-mt-32">
-      <div class="max-w-3xl mx-auto px-4">
-        <div class="bg-[#fdfdfb] rounded-2xl shadow-xl overflow-hidden">
-          <div class="bg-brand-dark p-6 text-center">
-            <h2 class="text-2xl font-bold text-[#fdfdfb]">Get in Touch</h2>
-            <p class="text-gray-400 text-sm">
-              Send a message to check availability
-            </p>
-          </div>
-          <div class="p-8">
-            <form
-              action="#"
-              method="POST"
-              class="space-y-6"
-              onsubmit="alert('This form will be activated after our handover meeting!'); return false;"
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
-              <div class="grid md:grid-cols-2 gap-6">
+              <div
+                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
+              >
+                "
+              </div>
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p
+                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
+              >
+                "Amazing driving instructor. I passed my driving test first time
+                with only 1 minor here in Kirkcaldy. Very professional and
+                patient."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center font-bold text-sm"
+                >
+                  PO
+                </div>
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-1"
-                    >Your Name</label
+                  <p class="font-bold text-brand-dark text-sm">
+                    Praise Ogbeide
+                  </p>
+                  <p class="text-xs text-slate-400">Passed First Time</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
+              >
+                "
+              </div>
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p
+                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
+              >
+                "Sandeep is a very good instructor... Goes over mistakes and
+                explains in detail. Also multilingual in Urdu, Punjabi and
+                Hindi."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm"
+                >
+                  SB
+                </div>
+                <div>
+                  <p class="font-bold text-brand-dark text-sm">Samina Bilal</p>
+                  <p class="text-xs text-slate-400">Student</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
+              >
+                "
+              </div>
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p
+                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
+              >
+                "Great instructor... makes learning to drive feel easy and stays
+                patient when mistakes are made."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm"
+                >
+                  IX
+                </div>
+                <div>
+                  <p class="font-bold text-brand-dark text-sm">IbbyX</p>
+                  <p class="text-xs text-slate-400">Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-24 bg-brand-dark relative">
+        <div
+          class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"
+        ></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+          <div
+            class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row"
+            data-aos="zoom-in"
+          >
+            <div
+              class="bg-brand-orange p-10 md:w-2/5 text-white flex flex-col justify-between relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-16 -mt-16"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-32 h-32 bg-brand-dark opacity-10 rounded-full -ml-16 -mb-16"
+              ></div>
+
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Contact Us</h3>
+                <p class="text-orange-100 text-sm mb-8">
+                  Fill out the form and we'll get back to you within 24 hours.
+                </p>
+
+                <div class="space-y-6">
+                  <div class="flex items-center">
+                    <i class="fas fa-phone-alt w-6"></i
+                    ><span class="font-medium">07748 128 184</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-envelope w-6"></i
+                    ><span class="font-medium">bvpk29@hotmail.com</span>
+                  </div>
+                  <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt w-6"></i
+                    ><span class="font-medium">Kirkcaldy, Fife</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-12 flex space-x-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581459571677"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center transition"
+                  aria-label="Visit Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="p-10 md:w-3/5 bg-white">
+              <form
+                action="#"
+                method="POST"
+                class="space-y-5"
+                onsubmit="alert('Thank you! We will contact you shortly.'); return false;"
+              >
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1"
+                    >Full Name</label
                   >
                   <input
                     type="text"
-                    name="name"
                     required
-                    class="form-input"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border-transparent focus:border-brand-orange focus:bg-white focus:ring-0 transition duration-200"
                     placeholder="John Doe"
                   />
                 </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-1"
-                    >Phone Number</label
-                  >
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    class="form-input"
-                    placeholder="077..."
-                  />
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                      >Phone</label
+                    >
+                    <input
+                      type="tel"
+                      required
+                      class="w-full px-4 py-3 rounded-lg bg-gray-50 border-transparent focus:border-brand-orange focus:bg-white focus:ring-0 transition duration-200"
+                      placeholder="077..."
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                      >Postcode</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full px-4 py-3 rounded-lg bg-gray-50 border-transparent focus:border-brand-orange focus:bg-white focus:ring-0 transition duration-200"
+                      placeholder="KY1..."
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1"
-                  >Email Address</label
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1"
+                    >Message / Preferred Time</label
+                  >
+                  <textarea
+                    rows="3"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border-transparent focus:border-brand-orange focus:bg-white focus:ring-0 transition duration-200"
+                    placeholder="I am looking for lessons starting next week..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-brand-dark text-white font-bold py-4 rounded-lg shadow-lg hover:bg-slate-800 transform hover:-translate-y-1 transition-all duration-200"
                 >
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  class="form-input"
-                  placeholder="john@example.com"
-                />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1"
-                  >Message / Preferred Dates</label
-                >
-                <textarea
-                  name="message"
-                  rows="4"
-                  class="form-input"
-                  placeholder="I'm looking for lessons in Kirkcaldy..."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full btn-accent py-4 rounded-lg font-bold text-lg shadow-lg"
-              >
-                Send Message
-              </button>
-            </form>
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer
-      class="bg-brand-dark text-[#fdfdfb] py-12 border-t-8 border-brand-orange"
-    >
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <div class="mb-8">
-          <span class="text-3xl font-extrabold"
-            >Road<span class="text-brand-orange">W</span>ay<span
+          <span class="text-3xl font-extrabold text-white tracking-tight">
+            <span class="text-brand-orange">R</span>oad<span
               class="text-brand-orange"
-              >z</span
-            ></span
+              >W</span
+            >ay<span class="text-brand-orange">z</span>
+          </span>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-8 mb-12 text-sm font-medium"
+        >
+          <a href="#about" class="hover:text-brand-orange transition">About</a>
+          <a href="#reviews" class="hover:text-brand-orange transition"
+            >Reviews</a
+          >
+          <a href="#rates" class="hover:text-brand-orange transition">Rates</a>
+          <a href="#contact" class="hover:text-brand-orange transition"
+            >Contact</a
           >
         </div>
 
         <div
-          class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto text-gray-300 text-sm mb-12"
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500"
         >
-          <div>
-            <i
-              class="fas fa-map-marker-alt text-brand-orange mb-2 block text-xl"
-            ></i
-            >Kirkcaldy, Glenrothes, Leven
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>© 2026 RoadWayz Driving School. All rights reserved.</p>
+            <p class="mt-1">
+              Website by
+              <a
+                href="https://www.lewiswake.com"
+                target="_blank"
+                class="text-brand-orange hover:text-white transition font-semibold"
+                >Lewis Wake</a
+              >
+            </p>
           </div>
-          <div>
-            <i class="fas fa-envelope text-brand-orange mb-2 block text-xl"></i>
+
+          <div class="space-x-4">
             <a
-              href="mailto:bvpk29@hotmail.com"
-              class="hover:text-brand-orange transition"
-              >bvpk29@hotmail.com</a
+              href="terms.html"
+              class="text-brand-orange hover:text-white transition"
+              >Terms & Conditions</a
+            >
+            <a
+              href="privacy.html"
+              class="text-brand-orange hover:text-white transition"
+              >Privacy Policy</a
             >
           </div>
-          <div>
-            <i
-              class="fas fa-phone-alt text-brand-orange mb-2 block text-xl"
-            ></i>
-            <a href="tel:07748128184" class="hover:text-brand-orange transition"
-              >07748 128 184</a
-            >
-          </div>
-          <div>
-            <i class="fas fa-clock text-brand-orange mb-2 block text-xl"></i
-            >7:30am - 9:00pm
-          </div>
-        </div>
-
-        <div
-          class="border-t border-gray-800 pt-8 flex flex-col items-center text-xs text-gray-500"
-        >
-          <p class="mb-2">© 2026 RoadWayz Driving School.</p>
-          <button
-            @click="showTerms = true"
-            class="text-gray-400 hover:text-[#fdfdfb] underline"
-          >
-            Terms & Conditions
-          </button>
         </div>
       </div>
     </footer>
-
     <div
-      x-show="showTerms"
-      @click="showTerms = false"
-      class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+      x-data="{ showCookie: !localStorage.getItem('cookieConsent') }"
+      x-show="showCookie"
+      x-transition.opacity
+      class="fixed bottom-0 left-0 w-full bg-slate-900 text-white p-4 z-50 shadow-2xl border-t border-slate-700"
       style="display: none"
     >
       <div
-        @click.stop
-        class="bg-[#fdfdfb] text-gray-800 rounded-xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-8 relative"
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
       >
+        <p class="text-sm text-slate-300 text-center md:text-left">
+          We use cookies to ensure you get the best experience on our website.
+          <a href="privacy.html" class="text-brand-orange hover:underline"
+            >Read Policy</a
+          >
+        </p>
         <button
-          @click="showTerms = false"
-          class="absolute top-4 right-4 text-gray-400 hover:text-brand-orange"
+          @click="showCookie = false; localStorage.setItem('cookieConsent', 'true')"
+          class="bg-brand-orange hover:bg-brand-accent text-white px-6 py-2 rounded-lg font-bold text-sm transition"
         >
-          <i class="fas fa-times text-2xl"></i>
-        </button>
-        <h3 class="text-2xl font-bold mb-4 text-brand-dark">
-          Terms & Conditions
-        </h3>
-        <div class="space-y-4 text-sm leading-relaxed">
-          <p>
-            <strong>1. Lorem Ipsum:</strong> Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <p>
-            <strong>2. Dolor Sit Amet:</strong> Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            <strong>3. Consectetur Adipiscing:</strong> Sed ut perspiciatis unde
-            omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-          <p>
-            <strong>4. Eiusmod Tempor:</strong> Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-            magni dolores eos qui ratione voluptatem sequi nesciunt.
-          </p>
-        </div>
-        <button
-          @click="showTerms = false"
-          class="mt-6 w-full btn-primary py-3 rounded-lg font-bold"
-        >
-          Close
+          Accept
         </button>
       </div>
     </div>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Page Not Found | RoadWayz Driving School</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="script.js"></script>
+
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body
+    class="text-slate-800 bg-brand-light antialiased selection:bg-brand-orange selection:text-white flex flex-col min-h-screen"
+    x-data="{ scrolled: true }"
+  >
+    <nav
+      class="glass shadow-md py-2 fixed w-full z-50 transition-all duration-300 ease-in-out"
+      x-data="{ mobileMenuOpen: false }"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center flex-shrink-0">
+            <a href="index.html" class="flex items-center gap-2 group">
+              <span
+                class="text-2xl font-extrabold text-brand-dark tracking-tight"
+              >
+                <span class="text-brand-orange">R</span>oad<span
+                  class="text-brand-orange"
+                  >W</span
+                >ay<span class="text-brand-orange">z</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html#about"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
+              >About</a
+            >
+            <a
+              href="index.html#reviews"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
+              >Reviews</a
+            >
+            <a
+              href="index.html#rates"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
+              >Rates</a
+            >
+            <a
+              href="index.html#contact"
+              class="text-sm font-semibold text-slate-600 hover:text-brand-orange transition-colors"
+              >Contact</a
+            >
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <div class="h-6 w-px bg-slate-300 mx-2"></div>
+            <a
+              href="https://www.facebook.com/profile.php?id=61581459571677"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-slate-400 hover:text-[#1877F2] transition-colors text-xl"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="tel:07748128184"
+              class="bg-brand-orange hover:bg-brand-accent text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-glow hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2"
+            >
+              <i class="fas fa-phone-alt text-xs"></i> 07748 128 184
+            </a>
+          </div>
+
+          <div class="md:hidden flex items-center gap-4 ml-auto">
+            <button
+              @click="mobileMenuOpen = !mobileMenuOpen"
+              class="text-brand-dark text-2xl focus:outline-none p-2"
+            >
+              <i
+                class="fas"
+                :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        x-show="mobileMenuOpen"
+        @click.outside="mobileMenuOpen = false"
+        x-transition.opacity.duration.300ms
+        class="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-xl z-40"
+        style="display: none"
+      >
+        <div class="flex flex-col p-4 space-y-4 text-center">
+          <a href="index.html#about" class="text-brand-dark font-semibold py-2"
+            >About</a
+          >
+          <a
+            href="index.html#reviews"
+            class="text-brand-dark font-semibold py-2"
+            >Reviews</a
+          >
+          <a href="index.html#rates" class="text-brand-dark font-semibold py-2"
+            >Rates</a
+          >
+          <a
+            href="index.html#contact"
+            class="text-brand-dark font-semibold py-2"
+            >Contact</a
+          >
+          <a
+            href="tel:07748128184"
+            class="bg-brand-orange text-white py-3 rounded-lg font-bold"
+            >Call Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="flex-grow flex items-center justify-center pt-32 pb-24 px-4 sm:px-6 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 w-full h-full bg-[#fdfdfb] z-0">
+        <div
+          class="absolute top-20 left-10 w-72 h-72 bg-brand-orange rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+        ></div>
+      </div>
+
+      <div class="max-w-xl mx-auto text-center relative z-10">
+        <div class="mb-8" data-aos="zoom-in">
+          <span class="text-9xl font-extrabold text-brand-dark opacity-10">
+            404
+          </span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6">
+          Wrong Turn!
+        </h1>
+
+        <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+          It looks like you've veered off course. Don't worry, even the best
+          drivers get lost sometimes. Let's get you back on the main road.
+        </p>
+
+        <a
+          href="index.html"
+          class="inline-flex items-center justify-center bg-brand-orange hover:bg-brand-accent text-white px-8 py-4 rounded-xl font-bold shadow-glow hover:shadow-lg transition-all transform hover:-translate-y-1"
+        >
+          <i class="fas fa-home mr-3"></i> Back to Safety
+        </a>
+      </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="mb-8">
+          <span class="text-3xl font-extrabold text-white tracking-tight">
+            <span class="text-brand-orange">R</span>oad<span
+              class="text-brand-orange"
+              >W</span
+            >ay<span class="text-brand-orange">z</span>
+          </span>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-8 mb-12 text-sm font-medium"
+        >
+          <a href="#about" class="hover:text-brand-orange transition">About</a>
+          <a href="#reviews" class="hover:text-brand-orange transition"
+            >Reviews</a
+          >
+          <a href="#rates" class="hover:text-brand-orange transition">Rates</a>
+          <a href="#contact" class="hover:text-brand-orange transition"
+            >Contact</a
+          >
+        </div>
+
+        <div
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500"
+        >
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>© 2026 RoadWayz Driving School. All rights reserved.</p>
+            <p class="mt-1">
+              Website by
+              <a
+                href="https://www.lewiswake.com"
+                target="_blank"
+                class="text-brand-orange hover:text-white transition font-semibold"
+                >Lewis Wake</a
+              >
+            </p>
+          </div>
+
+          <div class="space-x-4">
+            <a
+              href="terms.html"
+              class="text-brand-orange hover:text-white transition"
+              >Terms & Conditions</a
+            >
+            <a
+              href="privacy.html"
+              class="text-brand-orange hover:text-white transition"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

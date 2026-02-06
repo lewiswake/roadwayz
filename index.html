@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +36,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript>
       <link
@@ -305,7 +305,10 @@
               >
                 <img
                   src="roadwayz-car-clean.jpg"
-                  onerror="this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                  "
                   alt="RoadWayz Toyota Corolla Tuition Car"
                   fetchpriority="high"
                   width="800"
@@ -333,102 +336,127 @@
 
       <section
         id="about"
-        class="py-24 bg-brand-dark text-white relative overflow-hidden"
+        class="py-24 bg-brand-dark text-[#fdfdfb] relative overflow-hidden scroll-mt-32"
       >
         <div
-          class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+          class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
         ></div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-up">
+          <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div data-aos="fade-right">
               <h2
                 class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2"
               >
-                Our Philosophy
+                About RoadWayz
               </h2>
-              <h3
-                class="text-4xl lg:text-5xl font-bold mb-6 text-white leading-tight"
-              >
-                Less Talk. <br /><span
-                  class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-yellow-500"
-                  >More Driving.</span
-                >
+              <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Calm, Confident &
+                <span class="text-brand-orange">Professional Tuition</span>
               </h3>
-              <p class="text-slate-300 mb-6 text-lg leading-relaxed font-light">
-                We don't believe in sitting parked at the roadside reading
-                textbooks when you could be gaining valuable practical
-                experience.
-              </p>
 
-              <div class="space-y-4 mt-8">
-                <div class="flex items-start">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-orange"
-                  >
-                    <i class="fas fa-tachometer-alt"></i>
-                  </div>
-                  <div class="ml-4">
-                    <h4 class="text-lg font-bold">Maximised Wheel Time</h4>
-                    <p class="text-sm text-slate-400">
-                      Every minute counts. We get you driving from day one.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div
-                    class="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-brand-orange"
-                  >
-                    <i class="fas fa-route"></i>
-                  </div>
-                  <div class="ml-4">
-                    <h4 class="text-lg font-bold">Local Route Experts</h4>
-                    <p class="text-sm text-slate-400">
-                      Master the tricky spots in Kirkcaldy before your test.
-                    </p>
-                  </div>
-                </div>
+              <div class="prose prose-lg prose-invert text-gray-300 space-y-4">
+                <p>
+                  Hi, I'm <strong>Sandeep Bir Kaur</strong>. I am a local, DVSA
+                  Approved Driving Instructor covering
+                  <strong>Fife, Kirkcaldy, and surrounding areas</strong>.
+                </p>
+                <p>
+                  With over <strong>24 years of driving experience</strong>, I
+                  founded RoadWayz to provide a safe, supportive environment
+                  where students can learn at their own pace. My teaching
+                  philosophy is built on patience and connection. I believe that
+                  when a student feels calm, they learn faster and retain more.
+                </p>
+                <p>
+                  I pride myself on being
+                  <strong>reliable and punctual</strong>. Every lesson is
+                  planned in advance to ensure you make consistent progress
+                  towards your test, getting the full value out of every hour
+                  you spend in the car.
+                </p>
               </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+            <div class="relative" data-aos="fade-left">
               <div
-                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20"
-              >
-                <i class="fas fa-language text-3xl text-brand-orange mb-4"></i>
-                <h4 class="font-bold text-lg">Multilingual</h4>
-                <p class="text-sm text-slate-400 mt-2 leading-snug">
-                  Fluent tuition available in Punjabi, Hindi & Urdu.
-                </p>
-              </div>
+                class="absolute inset-0 bg-brand-orange rounded-2xl transform translate-x-3 translate-y-3 opacity-20"
+              ></div>
+              <img
+                src="https://placehold.co/1200x900.png"
+                alt="RoadWayz Instructor Car"
+                class="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-white/10"
+              />
+            </div>
+          </div>
+
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            data-aos="fade-up"
+          >
+            <div
+              class="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-brand-orange/50 transition duration-300 group"
+            >
               <div
-                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20 translate-y-8"
+                class="w-12 h-12 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center text-xl mb-4 group-hover:bg-brand-orange group-hover:text-white transition"
               >
-                <i class="fas fa-car-side text-3xl text-brand-orange mb-4"></i>
-                <h4 class="font-bold text-lg">Modern Fleet</h4>
-                <p class="text-sm text-slate-400 mt-2 leading-snug">
-                  Learn in a dual-controlled, modern Toyota Corolla.
-                </p>
+                <i class="fas fa-language"></i>
               </div>
+              <h4 class="text-lg font-bold text-white mb-2">Multilingual</h4>
+              <p class="text-sm text-gray-400">
+                Fluent instruction available in
+                <strong>English, Punjabi, Hindi & Urdu</strong> to ensure clear
+                understanding.
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-brand-orange/50 transition duration-300 group"
+            >
               <div
-                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20"
+                class="w-12 h-12 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center text-xl mb-4 group-hover:bg-brand-orange group-hover:text-white transition"
               >
-                <i class="fas fa-brain text-3xl text-brand-orange mb-4"></i>
-                <h4 class="font-bold text-lg">Calm Coaching</h4>
-                <p class="text-sm text-slate-400 mt-2 leading-snug">
-                  Patient instruction for nervous learners.
-                </p>
+                <i class="fas fa-universal-access"></i>
               </div>
+              <h4 class="text-lg font-bold text-white mb-2">
+                Inclusive Tuition
+              </h4>
+              <p class="text-sm text-gray-400">
+                Experienced in supporting drivers with
+                <strong>hearing requirements</strong> and driving anxiety.
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-brand-orange/50 transition duration-300 group"
+            >
               <div
-                class="glass-dark p-6 rounded-2xl hover:bg-white/10 transition duration-300 border-t border-white/20 translate-y-8"
+                class="w-12 h-12 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center text-xl mb-4 group-hover:bg-brand-orange group-hover:text-white transition"
               >
-                <i
-                  class="fas fa-calendar-check text-3xl text-brand-orange mb-4"
-                ></i>
-                <h4 class="font-bold text-lg">Flexible</h4>
-                <p class="text-sm text-slate-400 mt-2 leading-snug">
-                  Weekend and evening slots available.
-                </p>
+                <i class="fas fa-user-clock"></i>
               </div>
+              <h4 class="text-lg font-bold text-white mb-2">
+                Undivided Attention
+              </h4>
+              <p class="text-sm text-gray-400">
+                A pressure-free environment with my full focus. Learn at your
+                own pace.
+              </p>
+            </div>
+
+            <div
+              class="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-brand-orange/50 transition duration-300 group"
+            >
+              <div
+                class="w-12 h-12 rounded-lg bg-brand-orange/20 text-brand-orange flex items-center justify-center text-xl mb-4 group-hover:bg-brand-orange group-hover:text-white transition"
+              >
+                <i class="fas fa-route"></i>
+              </div>
+              <h4 class="text-lg font-bold text-white mb-2">Practical Focus</h4>
+              <p class="text-sm text-gray-400">
+                We prioritise <strong>practical driving time</strong> on local
+                test routes to build your skills and confidence.
+              </p>
             </div>
           </div>
         </div>
@@ -559,30 +587,26 @@
             <div
               class="w-24 h-1 bg-brand-orange mx-auto mt-4 rounded-full"
             ></div>
+            <p class="mt-4 text-slate-500">
+              Don't just take our word for it. Rated 5.0 Stars on Google.
+            </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
-              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div
-                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
-              >
-                "
-              </div>
               <div class="flex text-yellow-400 mb-4 text-sm">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i>
               </div>
-              <p
-                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
-              >
-                "Amazing driving instructor. I passed my driving test first time
-                with only 1 minor here in Kirkcaldy. Very professional and
-                patient."
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Amazing driving instructor. I passed my driving test
+                <strong>first time with only 1 minor</strong> here in Kirkcaldy.
+                Very professional and patient."
               </p>
               <div class="flex items-center gap-3">
                 <div
@@ -600,30 +624,79 @@
             </div>
 
             <div
-              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div
-                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
-              >
-                "
-              </div>
               <div class="flex text-yellow-400 mb-4 text-sm">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i>
               </div>
-              <p
-                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
-              >
-                "Sandeep is a very good instructor... Goes over mistakes and
-                explains in detail. Also multilingual in Urdu, Punjabi and
-                Hindi."
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Sandeep is a professional driving instructor who creates warmth
+                and calmness... She is also
+                <strong>multilingual (Punjabi, Urdu and Hindi)</strong> which is
+                a great help to those whose mother tongue is not English."
               </p>
               <div class="flex items-center gap-3">
                 <div
                   class="w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm"
+                >
+                  AN
+                </div>
+                <div>
+                  <p class="font-bold text-brand-dark text-sm">Am Na</p>
+                  <p class="text-xs text-slate-400">Student</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Amazing lessons. Instructor was calm and patient with me... She
+                met my <strong>flexible schedule times</strong>.. I passed at
+                first attempt."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm"
+                >
+                  PO
+                </div>
+                <div>
+                  <p class="font-bold text-brand-dark text-sm">Peace Ogbeide</p>
+                  <p class="text-xs text-slate-400">Passed First Time</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Goes over mistakes and explains in detail. Also multilingual...
+                I enjoyed learning with her. Definitely recommend."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center font-bold text-sm"
                 >
                   SB
                 </div>
@@ -635,31 +708,25 @@
             </div>
 
             <div
-              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group"
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="500"
             >
-              <div
-                class="absolute top-6 right-8 text-6xl text-slate-200 font-serif opacity-50 group-hover:text-orange-100 transition"
-              >
-                "
-              </div>
               <div class="flex text-yellow-400 mb-4 text-sm">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i><i class="fas fa-star"></i
                 ><i class="fas fa-star"></i>
               </div>
-              <p
-                class="text-slate-600 italic mb-6 leading-relaxed relative z-10"
-              >
-                "Great instructor... makes learning to drive feel easy and stays
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Great instructor, gives good instructions and
+                <strong>makes learning to drive feel easy</strong> and stays
                 patient when mistakes are made."
               </p>
               <div class="flex items-center gap-3">
                 <div
-                  class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm"
+                  class="w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold text-sm"
                 >
-                  IX
+                  IB
                 </div>
                 <div>
                   <p class="font-bold text-brand-dark text-sm">IbbyX</p>
@@ -667,6 +734,47 @@
                 </div>
               </div>
             </div>
+
+            <div
+              class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-card transition duration-300 relative group flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="flex text-yellow-400 mb-4 text-sm">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-slate-600 italic mb-6 leading-relaxed flex-grow">
+                "Patient, clear, and very supportive. I felt
+                <strong>comfortable and confident</strong> during every lesson.
+                Highly recommended!"
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm"
+                >
+                  CV
+                </div>
+                <div>
+                  <p class="font-bold text-brand-dark text-sm">
+                    Camille Valentino
+                  </p>
+                  <p class="text-xs text-slate-400">Student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center" data-aos="fade-up">
+            <a
+              href="https://www.google.com/search?q=roadwayz%20kirkcaldy&sclient=gws-wiz#lrd=0x2cf48df8ab216a75:0xe8f4c9ee0e94c662,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center px-8 py-4 border border-brand-dark text-brand-dark font-bold rounded-xl hover:bg-brand-dark hover:text-white transition-all duration-300"
+            >
+              <i class="fab fa-google mr-2"></i> Read All Reviews
+            </a>
           </div>
         </div>
       </section>
@@ -730,7 +838,10 @@
                 action="#"
                 method="POST"
                 class="space-y-5"
-                onsubmit="alert('Thank you! We will contact you shortly.'); return false;"
+                onsubmit="
+                  alert('Thank you! We will contact you shortly.');
+                  return false;
+                "
               >
                 <div>
                   <label class="block text-sm font-semibold text-gray-700 mb-1"
@@ -822,7 +933,7 @@
             <p class="mt-1">
               Website by
               <a
-                href="https://www.lewiswake.com"
+                href="https://lewiswake.com"
                 target="_blank"
                 class="text-brand-orange hover:text-white transition font-semibold"
                 >Lewis Wake</a

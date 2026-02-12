@@ -1,8 +1,10 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-GB" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="https://roadwayz.co.uk/" />
 
     <title>RoadWayz Driving School | Automatic Driving Lessons Kirkcaldy</title>
     <meta
@@ -14,17 +16,31 @@
       content="Automatic Driving lessons Kirkcaldy, Driving Instructor Glenrothes, RoadWayz, Learner Driver, DVSA Approved, Automatic Car"
     />
     <meta name="author" content="RoadWayz Driving School" />
+    <meta name="robots" content="index, follow" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lewiswake.github.io/roadwayz/" />
-    <meta property="og:title" content="RoadWayz Driving School | Kirkcaldy" />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:url" content="https://roadwayz.co.uk/" />
+    <meta property="og:site_name" content="RoadWayz Driving School" />
+    <meta property="og:locale" content="en_GB" />
+    <meta
+      property="og:title"
+      content="RoadWayz Driving School | Automatic Tuition in Kirkcaldy"
+    />
     <meta
       property="og:description"
-      content="Pass your test fast with confident, patient automatic tuition. Multilingual lessons available."
+      content="Pass your test with confidence. DVSA Approved, Multilingual, Automatic Driving Lessons in Fife. Book your first lesson today."
     />
     <meta
       property="og:image"
-      content="https://lewiswake.github.io/roadwayz/logo.png"
+      content="https://roadwayz.co.uk/roadwayz-car-clean.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://roadwayz.co.uk/roadwayz-car-clean.jpg"
     />
 
     <link rel="preconnect" href="https://cdn.tailwindcss.com" />
@@ -53,33 +69,53 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script src="script.js"></script>
-
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "RoadWayz Driving School",
-        "image": "https://lewiswake.github.io/roadwayz/logo.png",
+        "image": "https://roadwayz.co.uk/logo.png",
         "telephone": "07748 128 184",
         "email": "bvpk29@hotmail.com",
+        "url": "https://roadwayz.co.uk/",
+        "priceRange": "£45 - £650",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Kirkcaldy",
           "addressRegion": "Fife",
           "addressCountry": "UK"
         },
-        "priceRange": "£45 - £650",
-        "url": "https://lewiswake.github.io/roadwayz/"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 56.1107,
+          "longitude": -3.1674
+        },
+        "areaServed": ["Kirkcaldy", "Glenrothes", "Leven", "Methil", "Fife"],
+        "sameAs": ["https://www.facebook.com/profile.php?id=61581459571677"],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
       }
     </script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -277,29 +313,6 @@
                   View Prices
                 </a>
               </div>
-
-              <!--<div
-                class="mt-10 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500 font-medium"
-              >
-                <div class="flex -space-x-2">
-                  <div
-                    class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-xs"
-                  >
-                    🎓
-                  </div>
-                  <div
-                    class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-xs"
-                  >
-                    🚗
-                  </div>
-                  <div
-                    class="w-8 h-8 rounded-full bg-brand-orange border-2 border-white flex items-center justify-center text-[8px] text-white"
-                  >
-                    40+
-                  </div>
-                </div>
-                <p>Happy students passed this year</p>
-              </div>-->
             </div>
 
             <div class="relative" data-aos="fade-left" data-aos-duration="1000">
@@ -398,6 +411,7 @@
               <img
                 src="passed-tests-roadwayz-1200x900.jpg"
                 alt="Driver's who have passed their tests"
+                loading="lazy"
                 class="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-white/10"
               />
             </div>

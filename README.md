@@ -27,7 +27,7 @@ Modern, responsive, SEO-focused brochure website for **RoadWayz Driving School**
 
 ## Project overview
 
-Static site built to establish an online presence for a local driving instructor. Focuses on performance, accessibility, and local SEO to capture traffic in the Fife area.
+Static site built to establish an online presence for a local driving instructor. Focuses on performance, accessibility, and local SEO to capture traffic for automatic driving lessons in the Fife area.
 
 ## Key features
 
@@ -37,6 +37,7 @@ Static site built to establish an online presence for a local driving instructor
 - **Animations:** Scroll animations powered by [AOS](https://michalsnik.github.io/aos/).
 - **Contact form:** Serverless email handling via [Formspree](https://formspree.io/).
 - **SEO optimized:** JSON-LD Local Business schema, Open Graph tags, and semantic HTML5.
+- **Analytics:** Integrated Microsoft Clarity for behavioral tracking.
 - **GDPR compliant:** Privacy Policy, Terms & Conditions, and a cookie consent banner.
 
 ## Technology stack
@@ -47,6 +48,7 @@ This project uses a **no-build** approach for simplicity and easy maintenance (C
 - **Tailwind CSS (CDN)** — styling framework (configured in `script.js`)
 - **Alpine.js (CDN)** — lightweight JS for UI behavior
 - **AOS (CDN)** — Animate On Scroll library
+- **Microsoft Clarity** — analytics and session recording
 - **Google Fonts** — Poppins typeface
 - **Font Awesome** — iconography
 
@@ -69,6 +71,7 @@ This project uses a **no-build** approach for simplicity and easy maintenance (C
 Since this is a static site, you do not need `npm` or a build process.
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/lewiswake/roadwayz.git
    ```
@@ -91,7 +94,7 @@ The contact form uses [Formspree](https://formspree.io/). To update the destinat
 3. Update the `action` URL with your new Formspree endpoint:
 
 ```html
-<form action="https://formspree.io/f/YOUR_NEW_ID" method="POST">
+<form action="https://formspree.io/f/YOUR_NEW_ID" method="POST"></form>
 ```
 
 ### Pricing & content
@@ -107,10 +110,10 @@ A JSON-LD script tag exists in the `<head>`. If the business address or operatin
 
 ```html
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness"
+  }
 </script>
 ```
 

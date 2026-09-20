@@ -229,7 +229,11 @@
           class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500"
         >
           <div class="text-center md:text-left mb-4 md:mb-0">
-            <p>© 2026 RoadWayz Driving School. All rights reserved.</p>
+            <p>
+              &copy;
+              <span x-data x-text="new Date().getFullYear()">2026</span>
+              RoadWayz Driving School. All rights reserved.
+            </p>
             <p class="mt-1">
               Website by
               <a

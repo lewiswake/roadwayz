@@ -55,12 +55,17 @@ This project uses a **no-build** approach for simplicity and easy maintenance (C
 ## File structure
 
 ```text
+├── css/
+│   └── style.css       # Custom CSS overrides (scrollbars, glassmorphism)
+├── js/
+│   └── script.js       # Tailwind config, AOS init, Analytics
+├── images/
+│   ├── logos/          # Branding, favicons, and icons
+│   └── photos/         # Photography assets
 ├── index.html          # Main landing page
 ├── privacy.html        # Privacy Policy (GDPR)
 ├── terms.html          # Terms & Conditions
 ├── 404.html            # Custom error page
-├── style.css           # Custom CSS overrides (scrollbars, glassmorphism)
-├── script.js           # Tailwind config & AOS initialization
 ├── site.webmanifest    # PWA manifest for Android/Chrome
 ├── CNAME               # Custom domain config for GitHub Pages
 └── README.md           # Project documentation

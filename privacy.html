@@ -22,11 +22,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <script
       defer
@@ -34,18 +34,24 @@
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/logos/favicon-16x16.png"
+    />
     <link rel="manifest" href="site.webmanifest" />
-    
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vnl2fcifm8");
-    </script>
   </head>
 
   <body
@@ -131,7 +137,7 @@
         @click.outside="mobileMenuOpen = false"
         x-transition.opacity.duration.300ms
         class="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-xl z-40"
-        style="display: none"
+        x-cloak
       >
         <div class="flex flex-col p-4 space-y-4 text-center">
           <a href="index.html#about" class="text-brand-dark font-semibold py-2"
@@ -239,15 +245,36 @@
               with your prior consent.
             </p>
 
-            <h3 class="text-brand-dark font-bold mt-8">5. Cookies & Website Analytics</h3>
+            <h3 class="text-brand-dark font-bold mt-8">
+              5. Cookies & Website Analytics
+            </h3>
             <p>
-              We use <strong>Microsoft Clarity</strong> to understand how you use our website. Clarity captures behavioral metrics, heatmaps, and session replay data to help us improve our site's user experience. This includes tracking how you interact with the page, such as your clicks, scrolling, and cursor movements. 
+              We use <strong>Microsoft Clarity</strong> to understand how you
+              use our website. Clarity captures behavioral metrics, heatmaps,
+              and session replay data to help us improve our site's user
+              experience. This includes tracking how you interact with the page,
+              such as your clicks, scrolling, and cursor movements.
             </p>
             <p class="mt-2">
-              Website usage data is captured using first and third-party cookies and other tracking technologies to determine the popularity of our pages and online activity. By using our site, you agree that we and Microsoft can collect and use this data. For more information about how Microsoft collects and uses your data, visit the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" class="text-brand-orange hover:underline">Microsoft Privacy Statement</a>.
+              Website usage data is captured using first and third-party cookies
+              and other tracking technologies to determine the popularity of our
+              pages and online activity. By using our site, you agree that we
+              and Microsoft can collect and use this data. For more information
+              about how Microsoft collects and uses your data, visit the
+              <a
+                href="https://privacy.microsoft.com/en-us/privacystatement"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-brand-orange hover:underline"
+                >Microsoft Privacy Statement</a
+              >.
             </p>
             <p class="mt-2">
-              A separate cookie is used to remember your preference regarding our cookie consent banner itself, ensuring you do not see the pop-up repeatedly if you have already accepted it. You can choose to disable cookies through your browser settings, though this may affect your user experience.
+              A separate cookie is used to remember your preference regarding
+              our cookie consent banner itself, ensuring you do not see the
+              pop-up repeatedly if you have already accepted it. You can choose
+              to disable cookies through your browser settings, though this may
+              affect your user experience.
             </p>
 
             <h3 class="text-brand-dark font-bold mt-8">6. Your Rights</h3>
@@ -285,12 +312,20 @@
         <div
           class="flex flex-wrap justify-center gap-8 mb-12 text-sm font-medium"
         >
-          <a href="index.html#about" class="hover:text-brand-orange transition">About</a>
-          <a href="index.html#reviews" class="hover:text-brand-orange transition"
+          <a href="index.html#about" class="hover:text-brand-orange transition"
+            >About</a
+          >
+          <a
+            href="index.html#reviews"
+            class="hover:text-brand-orange transition"
             >Reviews</a
           >
-          <a href="index.html#rates" class="hover:text-brand-orange transition">Rates</a>
-          <a href="index.html#contact" class="hover:text-brand-orange transition"
+          <a href="index.html#rates" class="hover:text-brand-orange transition"
+            >Rates</a
+          >
+          <a
+            href="index.html#contact"
+            class="hover:text-brand-orange transition"
             >Contact</a
           >
         </div>
@@ -306,6 +341,7 @@
                 href="https://www.lewiswake.com"
                 target="_blank"
                 class="text-brand-orange hover:text-white transition font-semibold"
+                rel="noopener noreferrer"
                 >Lewis Wake</a
               >
             </p>
@@ -326,14 +362,12 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
     <div
       x-data="{ showCookie: !localStorage.getItem('cookieConsent') }"
       x-show="showCookie"
       x-transition.opacity
       class="fixed bottom-0 left-0 w-full bg-slate-900 text-white p-4 z-50 shadow-2xl border-t border-slate-700"
-      style="display: none"
+      x-cloak
     >
       <div
         class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
